@@ -7,19 +7,19 @@ export default class BodyIndex extends React.Component{
     componentDidMount () {
         console.log('didMount')
     }
-    
+    constructor () {
+        super () // 调用基类的所有的初始化方法
+        this.state = {username: 'Parry'}
+    }
     render () {
-        var userName = 'lily'
-        var boolInput = true
-        var html = 'abc&nbsp;def'
+        setTimeout(() => {
+            this.setState({username: 'hh'})
+        }, 4000)
         return (
             <div>
                 <h2>页面的主体内容</h2>
-                <p>{userName == '' ? '用户未登录' : '用户名：' + userName}</p>
-                {/*这里是注释*/}
-                <p><input type="button" value="默认按钮" disabled={boolInput}/></p>
-                <p>{html}</p>
-                <p dangerouslySetInnerHTML={{__html: html}}></p>
+                <p>{this.state.username}</p>
+                <p>用户ID：{this.props.userId}</p>
             </div>
         )
     }
