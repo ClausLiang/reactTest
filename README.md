@@ -28,3 +28,9 @@ webpack --watch 修改后自动编译
 ##### 5. 启动
 
 webpack-dev-server --inline 自动编译并刷新浏览器，并不生成文件，编译后的文件存储在内存中
+
+##### 6.安装css模块化相关包，并且做webpack相关配置
+
+```
+npm install --save style-loader css-loader babel-plugin-react-html-attrs(解决className,class冲突)
+```

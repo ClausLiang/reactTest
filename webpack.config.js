@@ -10,8 +10,12 @@ module.exports = {
             exclude: /(node_modules)/,
             loader: 'babel-loader',
             query: {
-                presets: ['react', 'es2015']
+                presets: ['react', 'es2015'],
+                plugins: ['react-html-attrs']
             }
+        },{ // css的loader，也是css的模块化配置方法
+            test: /\.css$/,
+            loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
         }],
     },
     output: {
