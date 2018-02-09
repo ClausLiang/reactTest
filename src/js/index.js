@@ -1,12 +1,11 @@
-var React = require('react')
-var ReactDom = require('react-dom')
+import React from 'react'
 import ComponentHeader from './components/header'
 import ComponentFooter from './components/footer'
 import BodyIndex from './components/bodyIndex'
 
 import 'antd/dist/antd.css'
 
-class Index extends React.Component{
+export default class Index extends React.Component{
     render () {
         return (
             <div>
@@ -17,4 +16,3 @@ class Index extends React.Component{
         )
     }
 }
-ReactDom.render(<Index/>, document.getElementById('example'))

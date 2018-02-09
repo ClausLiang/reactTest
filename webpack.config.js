@@ -3,7 +3,7 @@ var path = require('path')
 
 module.exports = {
     context: __dirname + '/src',
-    entry: "./js/index.js",
+    entry: "./js/root.js",
     module: {
         loaders: [{
             test: /\.js?$/,

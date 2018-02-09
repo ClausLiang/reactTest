@@ -34,3 +34,12 @@ webpack-dev-server --inline 自动编译并刷新浏览器，并不生成文件�
 ```
 npm install --save style-loader css-loader babel-plugin-react-html-attrs(解决className,class冲突)
 ```
+##### 7.安装ant design
+
+```
+npm install --save antd
+```
+##### 8.安装react-router-dom
+```
+npm install --save react-router-dom
+```
