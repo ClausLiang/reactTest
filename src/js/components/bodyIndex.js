@@ -4,6 +4,7 @@ import BodyChild from './bodyChild'
 
 import ReactMixin from 'react-mixin'
 import MixinLog from './mixins'
+import { Input } from 'antd';
 const defaultProps = {
     username: '默认的用户名'
 }
@@ -35,6 +36,7 @@ export default class BodyIndex extends React.Component{
                 <p>自身的age:{this.state.age}</p>
                 <button ref='mySubmit' onClick={this.changeUserInfo.bind(this)}>更名</button>
                 <p>接收父页面的属性，userId：{this.props.userId}，username: {this.props.username}</p>
+                <Input placeholder="Basic usage" />
                 <BodyChild {...this.props} handleChildValueChange={this.handleChildValueChange.bind(this)}></BodyChild>
             </div>
         )

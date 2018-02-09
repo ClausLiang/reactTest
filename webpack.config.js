@@ -14,8 +14,11 @@ module.exports = {
                 plugins: ['react-html-attrs']
             }
         },{ // css的loader，也是css的模块化配置方法
+        //     test: /\.css$/,
+        //     loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
+        // },{ // 使用ant-design 的配置文件
             test: /\.css$/,
-            loader: 'style-loader!css-loader?modules&importLoaders=1&localIdentName=[name]__[local]___[hash:base64:5]'
+            loader: 'style-loader!css-loader'
         }],
     },
     output: {
