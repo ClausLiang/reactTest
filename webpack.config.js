@@ -2,6 +2,9 @@ var webpack = require('webpack')
 var path = require('path')
 
 module.exports = {
+    devServer: {
+        historyApiFallback: true
+    },
     context: __dirname + '/src',
     entry: "./js/root.js",
     module: {
